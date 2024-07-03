@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API | Mini-Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <main>
+        <div class="left">
+            <nav>
+                <div class="logo">
+                    Weather API
+                    <img src="images/icon/116.webp">
+                    
+                </div>
+                <p class="owner-info">Made by <a href="https://github.com/PabitraBera2003">Phoenix</a></p>
+                <form id="locationInput">
+                    <input type="text" class="searchCity" placeholder="Search location">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
+            <div class="location-details">
+                <span class="temperature">16</span>
+                <div class="City-details">
+                    <span class="city">London</span>
+                    <div class="date-time"><span class="time">13:00</span>-<span class="date">3 7 2024</span></div>
+                </div>
+                <div class="weather">
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="icon" class="weather-image">
+                    <span class="condition">Partly cloudy</span>
+                </div>
+                <button class="AQIbtn"><i class="fa-solid fa-leaf"></i><span>AQI</span></button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-weather-details">
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="icon" class="big-weather-icon">
+                <span class="condition right-panel-condition">Partly cloudy</span>
+            </div>
+            <div class="all-climate-details">
+                <div class="windandcooridnates">
+                    <section class="wind-details">
+                        <div class="wind-info">
+                            <span class="wind-direction">Southwest</span>
+                            <span class="wind-value">6.1 km/h</span>
+                        </div>
+                        <i class="fa-solid fa-wind"></i>
+                    </section>
+                    <section class="coordinates-details">
+                        <ul>
+                            <li>
+                                <span class="latitude-text">Latitude: </span><span class="latitude">----</span>
+                        </li>
+                            <li>
+                                <span class="longitude-text">Longitude: </span><span class="longitude">----</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <section class="weather-details">
+                    <h3>Weather Details</h3>
+                    <ul>
+                        <li>
+                            <span>Cloudy<i class="fa-solid fa-cloud"></i></span>
+                            <span class="cloudy-value">25%</span>
+                        </li>
+                        <li>
+                            <span>Humidity<i class="fa-solid fa-droplet"></i></span>
+                            <span class="humidity-value">72%</span>
+                        </li>
+                        <li>
+                            <span>UV<i class="fa-solid fa-sun"></i></span>
+                            <span class="uv-value">0</span>
+                        </li>
+                        <li>
+                            <span>Pressure<i class="fa-solid fa-gauge"></i></span>
+                            <span class="pressure-value">1000hpa</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="other-panel">
+            <button class="toggle-up"><i class="fa-solid fa-chevron-up"></i></button>
+            <div class="other-panel-wind-details">
+                <div class="other-panel-wind-characteristics">
+                    <div class="wind-info">
+                        <span class="wind-direction">Southwest</span>
+                        <span class="wind-value">6.1 km/h</span>
+                    </div>
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="location-coordinates">
+                    <ul>
+                        <li>
+                            <span class="latitude-text">Latitude: </span><span class="latitude">----</span>
+                    </li>
+                        <li>
+                            <span class="longitude-text">Longitude: </span><span class="longitude">----</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-panel-weather-details">
+                <h3>Weather Details</h3>
+                    <ul>
+                        <li>
+                            <span>Cloudy<i class="fa-solid fa-cloud"></i></span>
+                            <span class="cloudy-value">25%</span>
+                        </li>
+                        <li>
+                            <span>Humidity<i class="fa-solid fa-droplet"></i></span>
+                            <span class="humidity-value">72%</span>
+                        </li>
+                        <li>
+                            <span>UV<i class="fa-solid fa-sun"></i></span>
+                            <span class="uv-value">0</span>
+                        </li>
+                        <li>
+                            <span>Pressure<i class="fa-solid fa-gauge"></i></span>
+                            <span class="pressure-value">1000hpa</span>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="AQI-items">
+
+        </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
